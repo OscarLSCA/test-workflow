@@ -5,7 +5,7 @@ on:
     paths: [ hello-world-docker-action/** ]
   workflow_dispatch:
 
-jobs:
+jobs:https://github.com/OscarLSCA
   test-action:
     runs-on: ubuntu-latest
     steps:
@@ -16,7 +16,7 @@ jobs:
         id: hello-action
         uses: ./hello-world-docker-action
         with:
-          who-to-greet: '@wulfland'
+          who-to-greet: '@OscarLSCA'
 
       - name: Output time set in the container
         run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
