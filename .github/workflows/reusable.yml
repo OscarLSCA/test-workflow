@@ -4,7 +4,7 @@ on:
   workflow_call:
     inputs:
       who-to-greet:
-        description: 'The person to greet'
+        description: 'OscarLSCA'
         type: string
         required: true
         default: World
